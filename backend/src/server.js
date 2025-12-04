@@ -4,12 +4,14 @@ import authRoutes from "./routes/auth.route.js"
 import messageRoutes from "./routes/message.route.js"
 import { connectToDb } from './lib/db.js';
 import { ENV } from './lib/env.js';
+import cookieParser from "cookie-parser"
+
 dotenv.config()
 const app=express();
 const port=ENV.PORT||3000
 app.use(express.json());
 
-
+app.use(cookieParser())
 app.use("/api/auth",authRoutes)
 app.use("/api/message",messageRoutes)
 connectToDb()
