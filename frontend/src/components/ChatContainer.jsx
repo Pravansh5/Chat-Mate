@@ -17,6 +17,12 @@ const ChatContainer = () => {
 
     return;
   }, [selectedUser, getMessagesByUserId]);
+
+   useEffect(() => {
+    if (messageEndRef.current) {
+      messageEndRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [messages]);
   return (
     <>
       <ChatHeader />
@@ -49,7 +55,7 @@ const ChatContainer = () => {
                 </div>
               </div>
             ))}
-           
+           <div ref={messageEndRef}/>
           </div>
 
           
