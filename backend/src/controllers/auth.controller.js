@@ -1,4 +1,5 @@
 import { sendWelcomeEmail } from "../emails/emailHandlers.js";
+import cloudinary from "../lib/cloudinary.js";
 import { ENV } from "../lib/env.js";
 import { generateToken } from "../lib/utils.js";
 import User from "../models/User.js";
@@ -104,7 +105,7 @@ export const updateProfile = async (req,res)=>{
     );
     res.status(200).json(updatedUser)
     } catch (error) {
-        consle.log("Error in update profile",error);
+        console.log("Error in update profile",error);
         res.status(500).json({message:"Internal server error"})
         
     }
