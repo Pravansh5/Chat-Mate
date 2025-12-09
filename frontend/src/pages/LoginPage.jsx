@@ -16,7 +16,7 @@ const LoginPage = () => {
   };
   return (
     <div className="w-full flex items-center justify-center p-4 bg-slate-900">
-      <div className="relative w-full max-w-6xl md:h-[800px] h-[650px]">
+      <div className="relative w-full max-w-6xl md:h-[650px] h-[600px]">
         <BorderAnimatedContainer>
           <div className="w-full flex flex-col md:flex-row">
             {/* FORM CLOUMN - LEFT SIDE */}
@@ -44,7 +44,7 @@ const LoginPage = () => {
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         className="input"
-                        placeholder="johndoe@gmail.com"
+                        placeholder="Enter your email"
                       />
                     </div>
                   </div>
@@ -92,13 +92,13 @@ const LoginPage = () => {
                   className="w-full h-auto object-contain"
                 />
                 <div className="mt-6 text-center">
-                  <h3 className="text-xl font-medium text-cyan-400">Connect Any time</h3>
+                 <h3 className="text-xl font-medium text-cyan-400">Happy Chatting !!!</h3>
+                <div className="mt-4 flex justify-center gap-4">
+                  <span className="auth-badge">Zero Cost</span>
+                  <span className="auth-badge">Setup in Seconds</span>
+                  <span className="auth-badge">Private</span>
+                </div>
 
-                  <div className="mt-4 flex justify-center gap-4">
-                    <span className="auth-badge">Free</span>
-                    <span className="auth-badge">Easy Setup</span>
-                    <span className="auth-badge">Private</span>
-                  </div>
                 </div>
               </div>
             </div>
