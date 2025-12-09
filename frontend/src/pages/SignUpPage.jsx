@@ -19,7 +19,7 @@ const SignUpPage = () => {
   };
   return (
     <div className="w-full flex items-center justify-center p-4 bg-slate-900">
-      <div className="relative w-full max-w-6xl md:h-[800px] h-[650px]">
+      <div className="relative w-full max-w-6xl md:h-[650px] h-[600px]">
         <BorderAnimatedContainer>
           <div className="w-full flex flex-col md:flex-row">
             {/* FORM CLOUMN - LEFT SIDE */}
@@ -46,7 +46,7 @@ const SignUpPage = () => {
                         value={formData.fullName}
                         onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                         className="input"
-                        placeholder="John Doe"
+                        placeholder="Enter your Name"
                       />
                     </div>
                   </div>
@@ -62,7 +62,7 @@ const SignUpPage = () => {
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         className="input"
-                        placeholder="johndoe@gmail.com"
+                        placeholder="Enter your Email"
                       />
                     </div>
                   </div>
