@@ -14,7 +14,9 @@ app.use(cors({origin:ENV.CLIENT_URL,credentials:true}))
 app.use(cookieParser())
 app.use("/api/auth",authRoutes)
 app.use("/api/message",messageRoutes)
+
+
 server.listen(port,()=>{
     console.log(`Server is running on port http://localhost:${port}`);
     connectToDb()
-})
+});

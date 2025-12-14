@@ -20,7 +20,7 @@ const aj = arcjet({
          "UA:PostmanRuntime",
     "UA:Postman",
     "LOCALHOST",
-    "IP:127.0.0.1",
+    "IP:localhost",
       ],
     }),
     // Create a token bucket rate limit. Other algorithms are supported.
