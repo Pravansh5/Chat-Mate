@@ -7,7 +7,7 @@ import { useChatStore } from "./useChatStore";
 const BASE_URL =
   import.meta.env.MODE === "development"
     ? "http://localhost:3000"
-    : "https://chat-mate-5aip.onrender.com";
+    : "https://chat-mate-5aip.onrender.com/api";
 
 export const useAuthStore = create((set, get) => ({
   authUser: null,
